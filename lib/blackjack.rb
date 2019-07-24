@@ -39,10 +39,12 @@ def hit?(num)
   if answer == "h"
     new_card = deal_card
     num += new_card
-  elsif !(answer == "s" || answer == "h")
+  elsif answer == "s"
+    num = num
+  else
     invalid_command
   end
-  # display_card_total(num)
+  num
 end
 
 def invalid_command
