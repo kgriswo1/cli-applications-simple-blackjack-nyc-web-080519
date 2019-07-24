@@ -35,7 +35,7 @@ def hit?(num)
   answer = get_user_input
   if answer == "h"
     deal_card
-    return display_card_total(initial_round + 
+    return display_card_total(num) 
   elsif !(answer == "s" || answer == "h")
     invalid_command
   end
