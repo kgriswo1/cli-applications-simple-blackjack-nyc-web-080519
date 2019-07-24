@@ -18,8 +18,8 @@ def get_user_input
   gets.chomp
 end
 
-prompt_user
-get_user_input
+# prompt_user
+# get_user_input
 
 def end_game(card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
@@ -42,7 +42,7 @@ def hit?(num)
   elsif !(answer == "s" || answer == "h")
     invalid_command
   end
-  display_card_total
+  display_card_total(num)
 end
 
 def invalid_command
