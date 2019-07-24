@@ -39,9 +39,7 @@ def hit?(num)
   if answer == "h"
     new_card = deal_card
     num += new_card
-  elsif answer == "s"
-    num = num
-  else
+  elsif !(answer == "s" || answer == "h")
     invalid_command
   end
   num
