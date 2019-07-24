@@ -18,9 +18,6 @@ def get_user_input
   gets.chomp
 end
 
-prompt_user
-get_user_input
-
 def end_game(card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
