@@ -30,7 +30,7 @@ def initial_round
   card_total
 end
 
-def hit?
+def hit?(num)
   
 end
 
