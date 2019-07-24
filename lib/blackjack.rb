@@ -36,9 +36,9 @@ def hit?(num)
   if answer == "h"
     new_card = deal_card
     return display_card_total(num + new_card) 
-  elsif !(answer == "s" || answer == "h")
-    invalid_command
-    return display_card_total(num)
+  # elsif !(answer == "s" || answer == "h")
+  #   invalid_command
+  #   return display_card_total(num)
   end
   
 end
