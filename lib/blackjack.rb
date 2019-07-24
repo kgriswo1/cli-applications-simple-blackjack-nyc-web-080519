@@ -18,9 +18,6 @@ def get_user_input
   gets.chomp
 end
 
-# prompt_user
-# get_user_input
-
 def end_game(card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
@@ -54,6 +51,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  card_total = initial_round
+  num = hit?(card_total)
+  display_card_total(num)
+  end_game(num)
 end
     
