@@ -34,10 +34,11 @@ def hit?(num)
   prompt_user
   answer = get_user_input
   if answer == "h"
-    deal_card
-    return display_card_total(num) 
+    new_card = deal_card
+    return display_card_total(num + new_card) 
   elsif !(answer == "s" || answer == "h")
     invalid_command
+    return display_card_total(num)
   end
   
 end
